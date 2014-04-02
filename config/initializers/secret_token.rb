@@ -4,4 +4,19 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-RspecTut::Application.config.secret_token = '0c44e58f4616e5af21059aa367ca2a901194c4742246e4312afdce59be88f6e6793ae264617d794f5616c77acf9172a3d33815ebe4df1ff69c4c327814a54bc8'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+FinalProject::Application.config.secret_key_base = secure_token
