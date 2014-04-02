@@ -6,6 +6,10 @@
 	Please Login:
   </h2>
 	<h2>
+		User Name: <%=text_field_tag(:user) %><br/>
+		Password: <%=text_field_tag(:password) %>
+	</h2>
+	<h2>
 		If you're new to Fakebook, then please:
 	</h2>
   <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
