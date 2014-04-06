@@ -9,7 +9,17 @@
 
 # Ignore the default SQLite database.
 /db/*.sqlite3
+config/database.yml
+04.log/*
+05.tmp/*
 
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
+
+## generic files to ignore
+08.*~
+09.*.lock
+10.*.DS_Store
+11.*.swp
+12.*.out
