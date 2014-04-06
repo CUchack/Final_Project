@@ -3,13 +3,21 @@
 /* universal */
 
 $lightGray: #999;
+$navbar-inverse-bg: #6dbcdb;
+.navbar-inner {
+  background-color: $blue; 
+  border-color: $blue;
+  background-image: -moz-linear-gradient(top, #333333, #222222);
+  background-image: -ms-linear-gradient(top, #333333, #222222);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#333333), to(#222222));
+  background-image: -webkit-linear-gradient(top, #333333, #222222);
+  background-image: -o-linear-gradient(top, #333333, #222222);
+  background-image: linear-gradient(top, #333333, #222222);
+  background-repeat: repeat-x;
+ /* filter: none;*/
+}
 
-/*.navbar-inner {
-  background-color: $blue; /* fallback color, place your own /
-  background-image: none;
-  background-repeat: no-repeat;
-  filter: none;
-}*/
+
 
 html {
   overflow-y: scroll;
@@ -68,7 +76,7 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   /* color: white */
-  color: $blue;
+  color: #FFF;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -76,7 +84,7 @@ p {
   line-height: 1;
   &:hover {
   /* color: white*/
-   color: #fff;
+   color: $lightGray;
    text-decoration: none;
   }
 }
@@ -109,9 +117,9 @@ footer {
   }
 }
 
-/*Css generated to make nav bar not black*/
+/*Css generated to make nav bar not black*=/
 
-$bgDefault      : #000;
+$bgDefault      : #FFF;
 $bgHighlight    : #000;
 $colDefault     : #000;
 $colHighlight   : #000;
@@ -162,4 +170,4 @@ $colHighlight   : #000;
         color: $colHighlight;
         background-color: $bgHighlight; }}}
 }
-
+*/
