@@ -1,6 +1,7 @@
 # Basic Info
-Project Title: Fakebook
-Team Members: Christopher Hack, Alixandria Jimenez, Lauren Jensen
+**Project Title:** Fakebook
+
+**Team Members:** Christopher Hack, Alixandria Jimenez, Lauren Jensen
 
 # Project Description
 Implements a rudimentary version of facebook with ruby on rails. Has basic profile settings, walls, and friend functionality.
@@ -18,6 +19,7 @@ It is deployed on Heroku here: http://secure-headland-8870.herokuapp.com/
 ## Directory Structure
 The default directory structure of a generated Ruby on Rails application:
 
+```
   |-- app
   |   |-- assets
   |   |   |-- images
@@ -55,13 +57,14 @@ The default directory structure of a generated Ruby on Rails application:
       |   |-- javascripts
       |   `-- stylesheets
       `-- plugins
+```
 
 ## Basic folder descriptions
-app
-  Holds all the code that's specific to this particular application.
+- app
+  - Holds all the code that's specific to this particular application.
 
-app/assets
-  Contains subdirectories for images, stylesheets, and JavaScript files.
+- app/assets
+  - Contains subdirectories for images, stylesheets, and JavaScript files.
 
 app/controllers
   Holds controllers that should be named like weblogs_controller.rb for
