@@ -61,10 +61,10 @@ The default directory structure of a generated Ruby on Rails application:
 
 ## Basic folder descriptions
 - app
-  - Holds all the code that's specific to this particular application.
+  Holds all the code that's specific to this particular application.
 
 - app/assets
-  - Contains subdirectories for images, stylesheets, and JavaScript files.
+  Contains subdirectories for images, stylesheets, and JavaScript files.
 
 app/controllers
   Holds controllers that should be named like weblogs_controller.rb for
