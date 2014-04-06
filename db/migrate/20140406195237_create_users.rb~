@@ -1,0 +1,15 @@
+class CreateUsers < ActiveRecord::Migration
+  def change
+    create_table :users do |t|
+      t.email :string
+      t.password :string
+      t.firstname :string
+      t.lastname :string
+      t.interests :string
+      t.aboutyourself :string
+      t.quotes :string
+
+      t.timestamps
+    end
+  end
+end
