@@ -1,0 +1,18 @@
+<% provide(:title, '') %>
+<div class="center hero-unit">
+  <h1>Welcome to Fakebook!</h1>
+
+  <h2>
+	Please Login:
+  </h2>
+	<h2>
+		User Name: <%=text_field_tag(:user) %><br/>
+		Password: <%=text_field_tag(:password) %><br/>
+		<%= link_to "Login!", '#', class: "btn btn-medium btn-primary" %>
+	</h2>
+	<h2>
+		If you're new to Fakebook, then please:
+	</h2>
+  <%= link_to "Sign up now!", signup_path, class: "btn btn-large btn-primary" %>
+</div>
+
