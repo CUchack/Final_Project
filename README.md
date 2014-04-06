@@ -3,7 +3,8 @@
 **Team Members:** Christopher Hack, Alixandria Jimenez, Lauren Jensen  
 **Project Description:**
 Implements a rudimentary version of facebook with ruby on rails. Has basic profile settings, walls, and friend functionality.  
-**Deployment:**It is deployed on Heroku here: http://secure-headland-8870.herokuapp.com/
+**Deployment:**
+It is deployed on Heroku here: http://secure-headland-8870.herokuapp.com/
 
 # Description of Contents
 
