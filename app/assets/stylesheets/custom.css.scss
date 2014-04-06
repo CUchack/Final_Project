@@ -4,6 +4,12 @@
 
 $lightGray: #999;
 
+/*.navbar-inner {
+  background-color: $blue; /* fallback color, place your own /
+  background-image: none;
+  background-repeat: no-repeat;
+  filter: none;
+}*/
 
 html {
   overflow-y: scroll;
@@ -62,7 +68,7 @@ p {
   margin-right: 10px;
   font-size: 1.7em;
   /* color: white */
-  color: #fff;
+  color: $blue;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
@@ -101,5 +107,59 @@ footer {
       margin-left: 10px;
     }
   }
+}
+
+/*Css generated to make nav bar not black*/
+
+$bgDefault      : #000;
+$bgHighlight    : #000;
+$colDefault     : #000;
+$colHighlight   : #000;
+.navbar-default {
+  background-color: $bgDefault;
+  border-color: $bgHighlight;
+  .navbar-brand {
+    color: $colDefault;
+    &:hover, &:focus { 
+      color: $colHighlight; }}
+  .navbar-text {
+    color: $colDefault; }
+  .navbar-nav {
+    > li {
+      > a {
+        color: $colDefault;
+        &:hover,  &:focus {
+          color: $colHighlight; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
+  .navbar-toggle {
+    border-color: $bgHighlight;
+    &:hover, &:focus {
+      background-color: $bgHighlight; }
+    .icon-bar {
+      background-color: $colDefault; }}
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $colDefault; }
+  .navbar-link {
+    color: $colDefault;
+    &:hover {
+      color: $colHighlight; }}}
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault;
+      &:hover, &:focus {
+        color: $colHighlight; }}
+    > .active {
+      > a, > a:hover, > a:focus, {
+        color: $colHighlight;
+        background-color: $bgHighlight; }}}
 }
 
