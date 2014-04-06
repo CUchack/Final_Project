@@ -1,4 +1,4 @@
-RspecTut::Application.routes.draw do
+FinalProject::Application.routes.draw do
 
   get "users/new"
 #  match '/root',    to: 'static_pages#home',    via: 'get'
