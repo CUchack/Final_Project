@@ -14,9 +14,12 @@
 ActiveRecord::Schema.define(version: 20140409214927) do
 
   create_table "users", force: true do |t|
-    t.string   "name"
-    t.string   "email"
-    t.string   "password"
+    t.string   :email
+    t.string   :firstname 
+    t.string   :lastname 
+    t.string   :interests 
+    t.string   :aboutyourself 
+    t.string   :quotes
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"
