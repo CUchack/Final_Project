@@ -16,7 +16,7 @@ module NavigationHelpers
     when /^the (Profile Preferences)?page$/ then '/preferences'
     when /^the Profile page$/ then '/'
     when /^the Login page$/ then '/'
-    
+    when /^the Signup page$/ then '/signup'
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
