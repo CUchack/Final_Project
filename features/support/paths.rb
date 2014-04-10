@@ -13,7 +13,7 @@ module NavigationHelpers
   def path_to(page_name)
     case page_name
 
-    when /^the (Profile Preferences)?page$/ then '/preferences'
+    when /^the Profile Preferences page$/ then '/preferences'
     when /^the Profile page$/ then '/'
     when /^the Login page$/ then '/'
     when /^the Signup page$/ then '/signup'
