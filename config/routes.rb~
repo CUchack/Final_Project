@@ -15,7 +15,10 @@ FinalProject::Application.routes.draw do
   match '/profile',     to: 'static_pages#profile', via: 'get'
 
  
+<<<<<<< HEAD
 
+=======
+>>>>>>> 0cce07321b6c144bdc8b57a872432c4697f5b60c
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

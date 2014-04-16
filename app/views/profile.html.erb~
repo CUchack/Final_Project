@@ -1,0 +1,8 @@
+<% provide(:title, 'Profile') %>
+   <b>Name:</b>  <% user.firstname user.lastname %> <!--Add/Remove Friend link-->
+   <b>Email:</b> <% user.email %> <!--Newsfeed link-->
+   <b>Quotes:</b> <% user.quotes %>
+   <b>Interests:</b> <% user.interests %>
+   <b>About:</b> <% user.about %>
+   
+   <!--add wall and friends list later-->
