@@ -1,5 +1,18 @@
 <% provide(:title, 'Preferences') %>
 <div class="center hero-unit">
 	<h2>Profile Preferences</h2>
+	
+	<div class="left">
+	<h2>
+		<%= form_tag(preferences_path) do -%>
+		
+		Email Address: <%=text_field_tag(:email) %><br/>
+		First Name: <%=text_field_tag(:firstname) %><br/>
+		Last Name: <%=text_field_tag(:lastname) %><br/>
+		
+		<%= submit_tag "Sign Up",class: "btn btn-medium btn-primary" %>
+		<% end -%>
+	</h2>
+	</div>
 
 </div>
