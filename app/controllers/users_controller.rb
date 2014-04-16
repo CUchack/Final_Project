@@ -3,6 +3,9 @@ class UsersController < ApplicationController
     
   end
   def new
+    #@user = User.create!(params[:email, :password, :firstname, :lastname])
+  end
+  def preferences
     
   end
 end

@@ -5,11 +5,11 @@ Feature: Implementing the create a new account sequence.
 		Given I am on the Login page
 		When I follow "Sign up now!"
 		Then I should be on the Signup page
-		When I fill in "Email Address" with "yourmom@this.com"
-		And I fill in "Password" with "123456"
-		And I fill in "Confirm Password" with "123456"
-		And I fill in "First Name" with "Your"
-		And I fill in "Last Name" with "Mom"
+		When I fill in "email" with "yourmom@this.com"
+		And I fill in "password" with "123456"
+		And I fill in "confirmpassword" with "123456"
+		And I fill in "firstname" with "Your"
+		And I fill in "lastname" with "Mom"
 		And I press "Sign Up"
 		Then I should be on the Profile Preferences page
 		And I should see "Your Mom"
