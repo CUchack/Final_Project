@@ -1,5 +1,6 @@
 FinalProject::Application.routes.draw do
 
+	#get "/profile"
   #get "users/signup"
  # get "users/create"
  # get "users/new"
@@ -11,6 +12,8 @@ FinalProject::Application.routes.draw do
   match '/signup',      to: 'users#new',            via: 'get'
   match '/preferences', to: 'users#preferences',    via: 'get'
   match '/preferences', to: 'users#preferences',    via: 'post'
+  match '/profile',     to: 'static_pages#profile', via: 'get'
+
  
   # The priority is based upon order of creation:
   # first created -> highest priority.
