@@ -1,0 +1,12 @@
+<% provide(:title, 'Profile') %>
+<b>Name:</b> Sayaka Miki
+<b>Email:</b> foo@bar.com
+
+<!--% @u = User.find_by_id(session[:id]) %>
+   <b>Name:</b>  <% @u.firstname @u.lastname %> <!--Add/Remove Friend link>
+   <b>Email:</b> <% @u.email %> <!--Newsfeed link>
+   <b>Quotes:</b> <% @u.quotes %>
+   <b>Interests:</b> <% @u.interests %>
+   <b>About:</b> <% @u.about %>
+   
+  <!--add wall and friends list later-->

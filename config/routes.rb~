@@ -14,7 +14,7 @@ FinalProject::Application.routes.draw do
 	 
  
  
-
+>>>>>>> 4e3924086390c602af61b99994bc5ad922c7071a
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
