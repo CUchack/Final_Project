@@ -6,13 +6,16 @@
 	<h3>
 		<%= form_tag(preferences_path(@user), :method => :put) do -%>
 		
-		First Name: <%=text_field_tag(:firstname) 	%>
-		Last Name: <%=text_field_tag(:lastname) %><br/>
-		Email Address: <%=text_field_tag(:email) %><br/>
-		<br/>
-		Interests: <br/><%=text_area_tag(:interests, nil, size:"30x10") %><br/>
-		<br/>
-		About Yourself: <br/><%=text_area_tag(:aboutyourself, nil, size:"50x10") %><br/>
+		<%=@user.label(:firstname, "First Name:")%>
+		<%=@user.text_field_tag(:firstname) 	%>
+		<%=@user.label(:lastname, "Last Name:")%>
+		<%=@user.text_field_tag(:lastname) %>
+		<%=@user.label(:email, "Email Address:") %>
+		<%=@user.text_field_tag(:email) %>
+		
+		Interests: <%=text_area_tag(:interests, nil, size:"30x10") %>
+		
+		About Yourself: <%=text_area_tag(:aboutyourself, nil, size:"50x10") %>
 		
 		
 		<%= submit_tag "Submit Changes",class: "btn btn-medium btn-primary" %>

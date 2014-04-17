@@ -3,12 +3,14 @@ class UsersController < ApplicationController
     
   end
   def new
-#    @user = User.create!(session[:email])
-#    flash[:notice] = "#{@user.firstname @user.lastname} was successfully created."
-#    redirect_to preferences_path
+    @user = User.create!(params[:email])
+    flash[:notice] = "#{@user.firstname} was successfully created."
+ #   redirect_to preferences_path
   end
   def preferences
-#    @user = User.find session[:id]
+    @user = User.find_by_id(session[:id])
+#    @user.update_attributes!(session[:email])
+#    flash[:notice] = "#{@user.firstname} was successfully updated."
   end
   def edit
     
